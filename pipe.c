@@ -66,7 +66,7 @@ int main(int argc, char* argv[]) {
         while (fgets(buffer, sizeof(buffer), stdin) != NULL) {
             fwrite(buffer, 1, strlen(buffer), file);
         }
-		*/
+		
         while ((n = read(p[0], buffer, sizeof(buffer))) > 0) {
             fwrite(buffer, 1, n, file);
         }
@@ -128,8 +128,7 @@ int main(int argc, char* argv[])
   close(p[1]);
   wait(&status);
   return 1;
- }
- {
+ }else {
     close(p[1]);
     file = fopen(argv[2], "wb");
     if (file == NULL) {
