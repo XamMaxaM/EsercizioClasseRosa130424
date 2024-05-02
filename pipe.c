@@ -81,7 +81,7 @@ int main(int argc, char* argv[]) {
 #include <sys/wait.h>
 
 #define BLOCK_DIM 1024
-#define N_DOMANDE 5
+#define N_DOMANDE 10
 
 int main(int argc, char* argv[])
 {
@@ -154,3 +154,4 @@ int main(int argc, char* argv[])
     return 1;
   }
 }
+
